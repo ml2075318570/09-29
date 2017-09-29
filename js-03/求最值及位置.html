@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    // 求一组数中的最大值和最小值，以及所在位置(最大值和最小值在这组数中的位置)
+    // var numbers = [65, 13, 101, 88, 10, 25];
+    var numbers = [65, 13, 101, 88, 10, 25];
+    var max = numbers[0];
+    var maxindex = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        if(max < numbers[i]){
+            max = numbers[i];
+            maxindex = i;
+        }
+    }
+    console.log(max);
+    console.log(maxindex);
+    var min = numbers[0];
+    var minindex = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        if(min > numbers[i]){
+            min = numbers[i];
+            minindex = i;
+        }
+    }
+    console.log(min);
+    console.log(minindex);
+</script>
+</html>

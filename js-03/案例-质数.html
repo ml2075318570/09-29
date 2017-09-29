@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    // - 判断一个数是否是素数(又叫质数，只能被1和自身整数的数)
+    function zs(num) {
+        var onOff =true;
+        for (var i = 2; i < num; i++) {
+            if(num%i === 0){
+               onOff = false;
+                break;
+            }
+        }
+        if(onOff){
+            console.log(num + '是质数');
+        }else {
+            console.log(num + '不是质数');
+        }
+    }
+    var num = 37;
+    zs(num);
+</script>
+</html>

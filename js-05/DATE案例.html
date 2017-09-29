@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    function formatDate(date) {
+        if (date instanceof Date == false) {
+            console.error('date不是日期对象');
+            return;
+        }
+        var year = date.getFullYear(),
+            month = date.getMonth() + 1,
+            day = date.getDate(),
+            hour = date.getHours(),
+            minute = date.getMinutes(),
+            second = date.getSeconds();
+        month = month <10?'0'+month:month;
+        day = day < 10 ? '0' + day : day;
+        hour = hour < 10 ? '0' + hour : hour;
+        minute = minute < 10 ? '0' + minute : minute;
+        second = second < 10 ? '0' + second : second;
+        return year+'-'+month+'-'+day+'  '+hour+':'+minute+':'+second;
+    }
+    var d = new Date();
+    var result = formatDate(d);
+    console.log(result);
+</script>
+</html>

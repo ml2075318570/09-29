@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 判断一个年份是闰年还是平年
+    // 提示:闰年：能被4整除，但不能被100整除的年份 或者 能被400整除的年份
+    var year = 2017;
+    if(year%4 == 0 && year%100 != 0 || year%400 ==0){
+        console.log('是闰年');
+    }else {
+        console.log('是平年');
+    }
+</script>
+</html>
